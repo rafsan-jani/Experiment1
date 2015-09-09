@@ -1,0 +1,694 @@
++1. Which declaration of the main method below would allow a class to be started as a standalone program. Select the one correct answer.
++         1. public static int main(char args[])
++         2. public static void main(String args[])
++         3. public static void MAIN(String args[])
++         4. public static void main(String args)
++         5. public static void main(char args[])
++	 ___________________________________________ 
++Answer:  |2. public static void main(String args[])|
++	 -------------------------------------------
++
++   2. What all gets printed when the following code is compiled and run? Select the three correct answers.
++
++
++      public class xyz {
++         public static void main(String args[]) {
++            for(int i = 0; i < 2; i++) {
++               for(int j = 2; j>= 0; j--) {
++                  if(i == j) break;
++                  System.out.println("i=" + i + " j="+j);
++               }
++            }
++         }
++      }
++
++         1. i=0 j=0
++         2. i=0 j=1
++         3. i=0 j=2
++         4. i=1 j=0
++         5. i=1 j=1
++         6. i=1 j=2
++         7. i=2 j=0
++         8. i=2 j=1
++         9. i=2 j=2
++Answer:
++    ______________ 
++    | 3. i=0 j=2 |
++    | 2. i=0 j=1 |
++    | 6. i=1 j=2 |
++    --------------
++
++   3. What gets printed when the following code is compiled and run with the following command -
++      java test 2
++      Select the one correct answer.
++
++
++      public class test {
++         public static void main(String args[]) { 
++            Integer intObj=Integer.valueOf(args[args.length-1]);
++            int i = intObj.intValue();
++
++            if(args.length > 1) 
++               System.out.println(i);
++            if(args.length > 0)
++               System.out.println(i - 1);
++            else 
++               System.out.println(i - 2);
++         }
++      }
++              
++
++         1. test
++         2. test -1
++         3. 0
++         4. 1
++         5. 2
++ 	Answer: ________
++		| 5. 2 |
++		--------
++
++   4. In Java technology what expression can be used to represent number of elements in an array named arr ?
++	Answer: _______________
++		| arr.length; |
++		---------------
++
++   5. How would the number 5 be represented in hex using up-to four characters.
++	Answer: _______
++		| 0x05 |
++		--------
++
++   6. Which of the following is a Java keyword. Select the four correct answers.
++         1. extern
++         2. synchronized
++         3. volatile
++         4. friend
++         5. friendly
++         6. transient
++         7. this
++         8. then
++	Answer:____________________
++	       	| 1. extern    	  |
++		| 2. synchronized |
++		| 5. friendly 	  |
++		| 7. this	  |
++		-------------------
++		
++   7. Is the following statement true or false. The constructor of a class must not have a return type.
++         1. true
++         2. false
++	Answer: __________
++		| 1.true |
++		----------
++
++   8. What is the number of bytes used by Java primitive long. Select the one correct answer.
++         1. The number of bytes is compiler dependent.
++         2. 2
++         3. 4
++         4. 8
++         5. 64
++	Answer: __________
++		| 4. 8   |
++		----------
++
++   9. What is returned when the method substring(2, 4) is invoked on the string "example"? Include the answer in quotes as the result is of type String.
++	Answer: _________
++		| "am"  |
++		---------
++  10. Which of the following is correct? Select the two correct answers.
++         1. The native keyword indicates that the method is implemented in another language like C/C++.
++         2. The only statements that can appear before an import statement in a Java file are comments.
++         3. The method definitions inside interfaces are public and abstract. They cannot be private or protected.
++         4. A class constructor may have public or protected keyword before them, nothing else.
++	
++	Answer:
++
++  11. What is the result of evaluating the expression 14 ^ 23. Select the one correct answer.
++         1. 25
++         2. 37
++         3. 6
++         4. 31
++         5. 17
++         6. 9
++         7. 24
++
++	Answer:
++
++  12. Which of the following are true. Select the one correct answers.
++         1. && operator is used for short-circuited logical AND.
++         2. ~ operator is the bit-wise XOR operator.
++         3. | operator is used to perform bitwise OR and also short-circuited logical OR.
++         4. The unsigned right shift operator in Java is >>.
++
++	Answer: __________________________________________________________
++		| 1. && operator is used for short-circuited logical AND.|
++		----------------------------------------------------------
++
++  13. Name the access modifier which when used with a method, makes it available to all the classes in the same package and to all the subclasses of the class.
++	
++	Answer: ____________
++		| Protected |
++		------------
++
++  14. Which of the following is true. Select the two correct answers.
++         1. A class that is abstract may not be instantiated.
++         2. The final keyword indicates that the body of a method is to be found elsewhere. The code is written in non-Java language, typically in C/C++.
++         3. A static variable indicates there is only one copy of that variable.
++         4. A method defined as private indicates that it is accessible to all other classes in the same package.
++
++	Answer:
++		__________________________________________________________________________
++		| 1. A class that is abstract may not be instantiated.			 |
++		| 3. A static variable indicates there is only one copy of that variable.|
++		--------------------------------------------------------------------------
++
++  15. What all gets printed when the following program is compiled and run. Select the two correct answers.
++
++
++      public class test {
++         public static void main(String args[]) { 
++            int i, j=1;
++            i = (j>1)?2:1;
++            switch(i) {
++              case 0: System.out.println(0); break;
++              case 1: System.out.println(1);
++              case 2: System.out.println(2); break;
++              case 3: System.out.println(3); break;
++            }
++         }
++      }
++              
++
++         1. 0
++         2. 1
++         3. 2
++         4. 3
++	
++	Answer: ________
++		| 2. 1 |
++		| 3. 2 |		
++		--------
++	
++  16. What all gets printed when the following program is compiled and run. Select the one correct answer.
++
++
++      public class test {
++         public static void main(String args[]) { 
++            int i=0, j=2;
++            do {
++               i=++i;
++               j--;
++            } while(j>0);
++            System.out.println(i);
++         }
++      }
++              
++
++         1. 0
++         2. 1
++         3. 2
++         4. The program does not compile because of statement "i=++i;"
++
++	Answer: _________
++		| 3. 2	|
++		---------
++
++  17. What all gets printed when the following gets compiled and run. Select the three correct answers.
++
++
++      public class test {
++          public static void main(String args[]) { 
++              int i=1, j=1;
++              try {
++                  i++; 
++                  j--;
++                  if(i/j > 1)
++                      i++;
++              }
++              catch(ArithmeticException e) {
++                  System.out.println(0);
++              }
++              catch(ArrayIndexOutOfBoundsException e) {
++                  System.out.println(1);
++              }
++              catch(Exception e) {
++                  System.out.println(2);
++              }
++              finally {
++                  System.out.println(3);
++              }
++              System.out.println(4);
++           }
++      }
++              
++
++         1. 0
++         2. 1
++         3. 2
++         4. 3
++         5. 4
++
++	Answer: _______
++		| 1. 0|
++		| 2. 2|
++		| 5. 4|
++		-------
++
++  18. What all gets printed when the following gets compiled and run. Select the two correct answers.
++
++
++      public class test {
++          public static void main(String args[]) { 
++              int i=1, j=1;
++              try {
++                  i++; 
++                  j--;
++                  if(i == j)
++                      i++;
++              }
++              catch(ArithmeticException e) {
++                  System.out.println(0);
++              }
++              catch(ArrayIndexOutOfBoundsException e) {
++                  System.out.println(1);
++              }
++              catch(Exception e) {
++                  System.out.println(2);
++              }
++              finally {
++                  System.out.println(3);
++              }
++              System.out.println(4);
++           }
++      }
++              
++
++         1. 0
++         2. 1
++         3. 2
++         4. 3
++         5. 4
++
++	Answer: _______
++		| 4. 3|
++		| 5. 4|
++		-------
++  19. What all gets printed when the following gets compiled and run. Select the two correct answers.
++
++
++      public class test {
++          public static void main(String args[]) { 
++          String s1 = "abc";
++          String s2 = "abc";
++          if(s1 == s2)
++              System.out.println(1);
++          else
++              System.out.println(2);
++          if(s1.equals(s2))
++              System.out.println(3);
++          else
++              System.out.println(4);
++          }
++      }
++              
++
++         1. 1
++         2. 2
++         3. 3
++         4. 4
++
++	Answer: _______
++		| 1. 1|
++		| 3. 3|
++		-------
++
++  20. What all gets printed when the following gets compiled and run. Select the two correct answers.
++
++
++      public class test {
++          public static void main(String args[]) { 
++          String s1 = "abc";
++          String s2 = new String("abc");
++
++          if(s1 == s2)
++              System.out.println(1);
++          else
++              System.out.println(2);
++          if(s1.equals(s2))
++              System.out.println(3);
++          else
++              System.out.println(4);
++          }
++      }
++              
++
++         1. 1
++         2. 2
++         3. 3
++         4. 4
++
++	Answer: _______
++		| 2. 2|
++		| 3. 3|
++		-------
++
++  21. Which of the following are legal array declarations. Select the three correct answers.
++         1. int i[5][];
++         2. int i[][];
++         3. int []i[];
++         4. int i[5][5];
++         5. int[][] a;
++
++	Answer: __________________
++		| 1. int i[5][]; |
++         	| 2. int i[][];  |
++		| 5. int[][] a;	 |
++		------------------
++
++  22. What is the range of values that can be specified for an int. Select the one correct answer.
++         1. The range of values is compiler dependent.
++         2. -231 to 231 - 1
++         3. -231-1 to 231
++         4. -215 to 215 - 1
++         5. -215-1 to 215
++	Answer: ________________________
++		| 2. -2^31 to 2^31 - 1 |
++		------------------------
++		
++  23. How can you ensure that the memory allocated by an object is freed. Select the one correct answer.
++         1. By invoking the free method on the object.
++         2. By calling system.gc() method.
++         3. By setting all references to the object to new values (say null).
++         4. Garbage collection cannot be forced. The programmer cannot force the JVM to free the memory used by an object.
++
++	Answer: _______________________________________________________________________________________________
++		4. Garbage collection cannot be forced. The programmer cannot force the JVM to free the memory|
++			   used by an object.
++		-----------------------------------------------------------------------------------------------
++
++  24. What gets printed when the following code is compiled and run. Select the one correct answer.
++
++
++      public class test {
++          public static void main(String args[]) { 
++          int i = 1;
++          do {
++              i--;
++          } while (i > 2);
++          System.out.println(i);
++          }
++      }
++              
++
++         1. 0
++         2. 1
++         3. 2
++         4. -1
++
++	Answer: ______
++		|1. 0 |
++		-------
++
++  25. Which of these is a legal definition of a method named m assuming it throws IOException, and returns void. Also assume that the method does not take any arguments. Select the one correct answer.
++         1. void m() throws IOException{}
++         2. void m() throw IOException{}
++         3. void m(void) throws IOException{}
++         4. m() throws IOException{}
++         5. void m() {} throws IOException
++
++	Answer: _____________________________________
++		|  1. void m() throws IOException{} |
++		-------------------------------------
++		
++  26. Which of the following are legal identifier names in Java. Select the two correct answers.
++         1. %abcd
++         2. $abcd
++         3. 1abcd
++         4. package
++         5. _a_long_name
++	
++	Answer: _________________
++		| 3. 1abcd 	 |
++		| 5. _a_long_name|
++		------------------
++
++  27. At what stage in the following method does the object initially referenced by s becomes available for garbage collection. Select the one correct answer.
++
++
++      void method X()  { 
++          String r = new String("abc");
++          String s = new String("abc");
++          r = r+1; //1
++          r = null; //2
++          s = s + r; //3
++      } //4
++              
++
++         1. Before statement labeled 1
++         2. Before statement labeled 2
++         3. Before statement labeled 3
++         4. Before statement labeled 4
++         5. Never.
++
++	Answer: ________________________________
++		| 1. Before statement labeled 1 |
++		---------------------------------
++
++  28. String s = new String("xyz");
++      Assuming the above declaration, which of the following statements would compile. Select the one correct answer.
++         1. s = 2 * s;
++         2. int i = s[0];
++         3. s = s + s;
++         4. s = s >> 2;
++         5. None of the above.
++	
++	Answer: _________________
++		| 3. s = s + s; |
++		-----------------
++
++  29. Which of the following statements related to Garbage Collection are correct. Select the two correct answers.
++         1. It is possible for a program to free memory at a given time.
++         2. Garbage Collection feature of Java ensures that the program never runs out of memory.
++         3. It is possible for a program to make an object available for Garbage Collection.
++         4. The finalize method of an object is invoked before garbage collection is performed on the object.
++	
++	Answer: _________________________________
++		|				|
++		---------------------------------
++
++  30. If a base class has a method defined as
++      void method() { }
++      Which of the following are legal prototypes in a derived class of this class. Select the two correct answers.
++         1. void method() { }
++         2. int method() { return 0;}
++         3. void method(int i) { }
++         4. private void method() { }
++	Answer: _________________________________
++		|  1. void method() { }		|
++		|  4. private void method() { } |
++		---------------------------------
++		
++  31. In which all cases does an exception gets generated. Select the two correct answers.
++
++      int i = 0, j = 1;
++         1. if((i == 0) || (j/i == 1))
++         2. if((i == 0) | (j/i == 1))
++         3. if((i != 0) && (j/i == 1))
++         4. if((i != 0) & (j/i == 1))
++	Answer: _________________________________
++		|  1. if((i == 0) || (j/i == 1))|
++		|  2. if((i == 0) | (j/i == 1)) |
++		---------------------------------
++  32. Which of the following statements are true. Select the two correct answers.
++         1. The wait method defined in the Thread class, can be used to convert a thread from Running state to Waiting state.
++         2. The wait(), notify(), and notifyAll() methods must be executed in synchronized code.
++         3. The notify() and notifyAll() methods can be used to signal and move waiting threads to ready-to-run state.
++         4. The Thread class is an abstract class.
++
++	Answer:
++		
++  33. Which keyword when applied on a method indicates that only one thread should execute the method at a time. Select the one correct answer.
++         1. transient
++         2. volatile
++         3. synchronized
++         4. native
++         5. static
++         6. final
++	Answer:
++
++  34. What is the name of the Collection interface used to represent elements in a sequence (in a particular order). Select the one correct answer.
++         1. Collection
++         2. Set
++         3. List
++         4. Map
++	Answer: _________________
++		| 2. Map	|
++		-----------------
++
++  35. Which of these classes implement the Collection interface SortedMap. Select the one correct answers.
++         1. HashMap
++         2. Hashtable
++         3. TreeMap
++         4. HashSet
++         5. TreeSet
++         6. Vector
++	Answer: _________________
++		| 3. TreeMap	|
++		-----------------
++
++  36. Which of the following are true about interfaces. Select the two correct answers.
++         1. Methods declared in interfaces are implicitly private.
++         2. Variables declared in interfaces are implicitly public, static, and final.
++         3. An interface can extend any number of interfaces.
++         4. The keyword implements indicate that an interface inherits from another.
++
++	Answer:
++	
++  37. Assume that class A extends class B, which extends class C. Also all the three classes implement the method test(). How can a method in a class A invoke the test() method defined in class C (without creating a new instance of class C). Select the one correct answer.
++         1. test();
++         2. super.test();
++         3. super.super.test();
++         4. ::test();
++         5. C.test();
++         6. It is not possible to invoke test() method defined in C from a method in A.
++	Answer:
++	
++  38. What is the return type of method round(double d) defined in Math class.
++	Answer:  ___________
++		 | Long	   |
++		 -----------
++  39. What gets written on the screen when the following program is compiled and run. Select the one right answer.
++
++
++      public class test {
++         public static void main(String args[]) { 
++         int i;
++         float  f = 2.3f;
++         double d = 2.7;
++         i = ((int)Math.ceil(f)) * ((int)Math.round(d));
++       
++         System.out.println(i);
++         }
++      }
++
++         1. 4
++         2. 5
++         3. 6
++         4. 6.1
++         5. 9
++ 	Answer: _________
++		| 3. 6  |
++		---------
++		
++  40. Is the following statement true or false. As the toString method is defined in the Object class, System.out.println can be used to print any object.
++         1. true
++         2. false
++	Answer: ____________
++		| 2. false |
++		------------
++
++  41. Which of these classes defined in java.io and used for file-handling are abstract. Select the two correct answers.
++         1. InputStream
++         2. PrintStream
++         3. Reader
++         4. FileInputStream
++         5. FileWriter
++
++	Answer:
++		
++  42. Name the collection interface used to represent collections that maintain unique elements.
++	Answer: _________
++		| Set	|
++		---------
++
++  43. What is the result of compiling and running the following program.
++
++
++      public class test {
++         public static void main(String args[]) { 
++            String str1="abc";
++            String str2="def";
++            String str3=str1.concat(str2);
++
++            str1.concat(str2);
++            System.out.println(str1);
++         }
++      }
++
++         1. abc
++         2. def
++         3. abcabc
++         4. abcdef
++         5. defabc
++         6. abcdefdef
++	Answer: ___________
++		| 1. abc  |
++		-----------
++
++  44. Select the one correct answer. The number of characters in an object of a class String is given by
++         1. The member variable called size
++         2. The member variable called length
++         3. The method size() returns the number of characters.
++         4. The method length() returns the number of characters.
++	Answer: __________________________________________________________
++		| 4. The method length() returns the number of characters |
++		-----------------------------------------------------------
++
++  45. Select the one correct answer. Which method defined in Integer class can be used to convert an Integer object to primitive int type.
++         1. valueOf
++         2. intValue
++         3. getInt
++         4. getInteger
++
++	Answer: ________________
++		|2. intValue	|
++		-----------------
++
++  46. Name the return type of method hashCode() defined in Object class, which is used to get the unique hash value of an Object.
++	Answer: _________
++		| int	|
++		---------
++
++  47. Which of the following are correct. Select the one correct answer.
++         1. An import statement, if defined, must always be the first non-comment statement of the file.
++         2. private members are accessible to all classes in the same package.
++         3. An abstract class can be declared as final.
++         4. Local variables cannot be declared as static.
++
++	Answer:  ___________________________________________________
++		 | 4. Local variables cannot be declared as static. |
++		 ---------------------------------------------------
++		
++  48. Name the keyword that makes a variable belong to a class, rather than being defined for each instance of the class. Select the one correct answer.
++         1. static
++         2. final
++         3. abstract
++         4. native
++         5. volatile
++         6. transient
++	Answer: ______________
++		|  1. static |
++		--------------
++		
++  49. Which of these are core interfaces in the collection framework. Select the one correct answer.
++         1. Tree
++         2. Stack
++         3. Queue
++         4. Array
++         5. LinkedList
++         6. Map
++	Answer: ____________
++		| 4. Array |
++		------------
++
++  50. Which of these statements are true. Select the two correct answers.
++         1. For each try block there must be at least one catch block defined.
++         2. A try block may be followed by any number of finally blocks.
++         3. A try block must be followed by at least one finally or catch block.
++         4. If both catch and finally blocks are defined, catch block must precede the finally block.
++	Answer: ______________________________________________________________________________________________
++		| 1. For each try block there must be at least one catch block defined. 		      |
++		| 4. If both catch and finally blocks are defined, catch block must precede the finally block.|
++		----------------------------------------------------------------------------------------------
++	
++
++
